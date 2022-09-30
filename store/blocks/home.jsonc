@@ -1,0 +1,284 @@
+{
+  "store.home": {
+    "blocks": ["responsive-layout.desktop#desktop", "slider-layout#home", "rich-text", "info-card#button-right", "info-card#button-left", "flex-layout.row", "responsive-layout.mobile#mobile", "tab-layout#home", "modal-trigger#first", "list-context.product-list", "condition-layout.product", "flex-layout.row#product-breadcrumb", "flex-layout.row#product-main"]
+  },
+  "modal-trigger#first": {
+    "children": ["rich-text#trigger", "modal-layout#first"]
+  },
+  "modal-layout#first": {
+    "children": ["rich-text#hello"]
+  },
+  "rich-text#trigger": {
+    "props": {
+      "text": "Nike Lab Oregon"
+    }
+  },
+  "rich-text#hello": {
+    "props": {
+      "text": "Nike Portland -  638 SW 5th Ave, Portland, OR 97204, US"
+    }
+  },
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"]
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#home1", "tab-list.item#home2"]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "sobreNos",
+      "label": "Sobre Nós",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "label": "contato",
+      "tabId": "Contato"
+    }
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#home1", "tab-content.item#home2"]
+  },
+  "tab-content.item#home1": {
+    "children": ["rich-text#home1"],
+    "props": {
+      "tabId": "sobreNos"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": ["rich-text#home2"],
+    "props": {
+      "tabId": "faleConosco"
+    }
+  },
+  "rich-text#home1": {
+    "props": {
+      "text": "Área do conteúdo da tab-list.item com  tabId = sobreNos",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#home2": {
+    "props": {
+      "text": "Área do conteúdo da tab-list.item com  tabId = contato",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "responsive-layout.desktop#desktop": {
+    "children": ["image#desktop"]
+  },
+
+  "responsive-layout.mobile#mobile": {
+    "children": ["image#mobile"]
+  },
+  "image#desktop": {
+    "props": {
+      "src": "https://prumo.vteximg.com.br/arquivos/Banner%202%201.png",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/black-friday"
+      },
+      "alt": "Membros Nike"
+    }
+  },
+
+  "image#mobile": {
+    "props": {
+      "src": "https://prumo.vteximg.com.br/arquivos/Banner%202%201.png",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/black-friday"
+      },
+      "alt": "Membros Nike"
+    }
+  },
+
+  "rich-text#desktop": {
+    "props": {
+      "text": "# Sua Corrida, Seu Jeito \n ### Membros Nike",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#mobile": {
+    "props": {
+      "text": "### ua Corrida, Seu Jeito \n #### Membros Nike",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "Alexandre - Nike Store Concept",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "info-card#button-right": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://imgnike-a.akamaihd.net/1300x1300/01692151A2.jpg",
+      "headline": "Kyrie Infinity",
+      "subhead": "Dê asas aos seus pés.<br>Disponível a partir de Setembro de 2022.</br>",  
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#button-left": {
+    "props": {
+    "isFullModeStyle": false,
+    "textPosition": "left",
+    "imageUrl": "https://imgnike-a.akamaihd.net/1300x1300/0129937T.jpg",
+    "headline": "LeBron XIX",
+    "subhead": "O rei voltou.<br>Disponível a partir de Outubro de 2022.",
+    "callToActionMode": "button",
+    "callToActionText": "Reserva",
+    "textAlignment": "center"
+    }
+  },
+  "flex-layout.row": {
+    "children": ["info-card#rethink", "flex-layout.col"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "blockClass": "flex-layout-row"
+    }
+  },
+  "flex-layout.col": {
+    "children": ["image#electronics", "image#major-appliance"]
+  },
+  "info-card#rethink": {
+    "props": {
+      "imageUrl": "https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/8b7cf857-acce-4194-b5da-e66e70ff4f84/nike-run-club-app.jpg",
+      "isFullModeStyle": true,
+      "headline": "Pense em novas formas de correr",
+      "callToActionText": "Descubra",
+      "textPosition": "center"
+    }
+  },
+  "image#electronics": {
+    "props": {
+      "src": "https://imgnike-a.akamaihd.net/branding/home-sbf/touts/tout-aniversario-nike-desk.jpg",
+      "maxWidth": "auto"
+    }
+  },
+  "image#major-appliance": {
+    "props": {
+      "src": "https://imgnike-a.akamaihd.net/branding/home-sbf/touts/tout-lookbook-desk.jpg",
+      "maxWidth": "auto"
+    }
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
+  },
+  "product-summary.shelf": {
+    "children": [
+      "modal-trigger#quickview",
+      "product-summary-name",
+      "product-selling-price"
+    ]
+  },
+  "modal-trigger#quickview": {
+    "children": ["product-summary-image", "modal-layout#quickview"]
+  },
+  "modal-layout#quickview": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "product-summary-sku-selector",
+      "product-summary-quantity",
+      "add-to-cart-button"
+    ]
+  },
+  "condition-layout.product": {
+    "children": ["condition.product#retro-mixer"]
+  },
+  "condition.product#retro-mixer": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "20"
+        }
+      ]
+    },
+    "children": ["image#retro-mixer-banner"]
+  },
+  "image#retro-mixer-banner": {
+    "props": {
+      "src": "https://appliancetheme.vtexassets.com/assets/app/src/retroimage___92a8271aac7c51d2059193bdbe019016.jpg",
+      "width": "100%",
+      "height": "200px",
+      "blockClass": "cover"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 20
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 9,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": ["product-images", "flex-layout.col#right-col"]
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      "thumbnailsOrientation": "vertical"
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "product-name",
+      "product-price#product-details",
+      "sku-selector",
+      "flex-layout.row#buy-button",
+      "shipping-simulator",
+      "share#default"
+    ]
+  },
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": ["buy-button"]
+  },
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
+  }
+}

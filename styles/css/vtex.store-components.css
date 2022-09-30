@@ -1,0 +1,27 @@
+.infoCardHeadline {
+    color: rgb(0, 0, 0);
+}
+.imageElement--cover {
+    object-fit: cover;
+    position: absolute;
+    width: 1680px;
+    height: 520px;
+    left: 0px;
+    top: 140px;
+  }
+  
+  .logoImage {
+    position: absolute;
+    width: 208px;
+    height: 31.72px;
+    left: 257px;
+    top: 24px;
+  }
+
+  .searchBarContainer {
+    position: absolute;
+    width: 438px;
+    height: 43px;
+    left: 621px;
+    top: 19px;
+  }
